@@ -1,1 +1,4 @@
-../.inputrc
+$include /etc/inputrc
+
+#	enable the non-case-sensitive on tab completion
+set completion-ignore-case On

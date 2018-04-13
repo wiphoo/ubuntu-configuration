@@ -1,1 +1,22 @@
-../.Xmodmap
+!!!!	based on https://fossies.org/linux/nedit/doc/faq.txt
+!!!!	
+!!!!	I use the numeric keypad really often, so I keep NumLock on. But NEdit shortcuts don't work when NumLock is on.
+!!!!
+!!!!	The bug is not in NEdit, but in Motif. This is fixed as of NEdit 5.2, but
+!!!!	that might not help you much. Older versions have the same problem.
+!!!! 
+!!!!	Here's how you tell X to interpret the keypad keys as numbers without
+!!!!	turning NumLock on. Create a file .Xmodmap in your home directory, and put
+!!!!	the following lines in it:
+
+keycode 79 = KP_7
+keycode 80 = KP_8
+keycode 81 = KP_9
+keycode 83 = KP_4
+keycode 84 = KP_5
+keycode 85 = KP_6
+keycode 87 = KP_1
+keycode 88 = KP_2
+keycode 89 = KP_3
+keycode 90 = KP_0
+keycode 91 = KP_Decimal

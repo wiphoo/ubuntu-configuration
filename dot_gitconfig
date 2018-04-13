@@ -1,1 +1,10 @@
-../.gitconfig
+[user]
+	email = wiphoo.m@gmail.com
+	name = Wiphoo (Terng) Methachawalit
+	
+[diff]
+    tool = meld
+[difftool]
+    prompt = false
+[difftool "meld"]
+    cmd = meld "$LOCAL" "$REMOTE"
